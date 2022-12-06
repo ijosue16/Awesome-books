@@ -152,7 +152,7 @@ Clone this repository to your desired folder:
 
 ### run the following command if you are using the terminal or cmd
 
-<code>git clone git@github.com:ijosue16/Mobile-portofolio.git</code>
+<code>git clone https://github.com/ijosue16/Awesome-books.git</code>
 
 **and add**
 
