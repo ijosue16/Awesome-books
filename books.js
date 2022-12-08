@@ -71,7 +71,6 @@ class BookShelv {
   }
 }
 
-
 const bookshelv = new BookShelv();
 bookshelv.displayBooks();
 const removeBtns = document.querySelectorAll('.removebtn');
