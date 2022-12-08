@@ -11,12 +11,13 @@
 html,
 body {
   max-width: 100%;
-  height: 100%;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 main {
-  max-width: 100%;
-  height: 100%;
+  /* max-width: 100%;
+  height: 100vh; */
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -29,6 +30,10 @@ h2,
 p {
   font-family: 'Comic Neue', sans-serif;
   font-weight: 700;
+}
+
+h1 {
+  font-size: 45px;
 }
 
 .dataContainer {
@@ -117,4 +122,76 @@ input {
   height: 3px;
   background-color: black;
   margin: 9px 0 9px 0;
+}
+
+.temp1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0 4rem 0;
+}
+
+.header {
+  width: 100%;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  border: 2px solid black;
+  padding: 0 9px 0 9px;
+  display: none;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: 'Comic Neue', sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.info-container li > a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-family: 'Comic Neue', sans-serif;
+  font-weight: 700;
+}
+
+.header-elements {
+  list-style-type: none;
+  max-width: 100%;
+  padding: 0 33px 0 33px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Comic Neue', sans-serif;
+  font-weight: 700;
+  border-right: 2px solid black;
+}
+
+.header-elements .awesome {
+  justify-self: flex-start;
+  left: 0;
+}
+
+.contact {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 44px 0 44px 0;
+  display: none;
+}
+
+.contact-header {
+  padding: 2.6rem 0 2.6rem 0;
+}
+
+.awesome1 {
+  display: flex;
 }

@@ -9,10 +9,21 @@
 </head>
 <body>
 <main>
+    <div class="header">
+        <ul class="header-list">
+            <div class="awesome1">
+            <li><a href="#temp1" class="header-elements awesome">Awesome books</a></li>
+        </div>
+            <li><a href="#datacontainer" class="header-elements List">List</a></li>
+            <li><a href="#newadd" class="header-elements Add-New">Add New</a></li>
+            <li><a href="#contact" class="header-elements Contact">Contact</a></li>
+        </ul>
+    </div>
+    <section class="temp1" id="temp1">
 <h1>All awesome books</h1>
 
-<div class="dataContainer"></div>
-<form action="" class="formSubmission">
+<div class="dataContainer" id="datacontainer" ></div>
+<form action="" class="formSubmission" id="newadd">
     <div class="bar"></div>
     <h2 class="form-title">Add a new book</h2>
     <input type="text" class="title" required placeholder="title" >
@@ -21,6 +32,22 @@
     <button type="submit" class="button" >Add</button>
 </div>
 </form>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="contact-header">Contact information</h2>
+         <p class="contact-para">Do you have any questions or you just want to say "hello"? <br>
+        You can reach out to us!</p> 
+        <br>  
+        <br>
+        <div class="contact-info">
+            <ul class="info-container">
+                <li><a href="" class="info-list">Our email:mail@gmail.com</a></li>
+                <li><a href="" class="info-list">Our phone number:073640833</a></li>
+                <li><a href="" class="info-list">Our address:Streel name 22 ,8485 City, Country</a></li>
+
+            </ul>
+        </div>
+    </section>
 </main>
 <script src="./books.js"></script>
 </body>
