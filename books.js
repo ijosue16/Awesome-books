@@ -3,6 +3,8 @@ const dataContainer = document.querySelector('.dataContainer');
 const formSubmision = document.querySelector('.formSubmission');
 const titleInput = document.querySelector('.title');
 const authorInput = document.querySelector('.author');
+
+
 class BookShelv {
   books = JSON.parse(localStorage.getItem('books')) || [];
 
@@ -40,6 +42,7 @@ class BookShelv {
   }
 }
 
+
 const bookshelv = new BookShelv();
 bookshelv.displayBooks();
 const removeBtns = document.querySelectorAll('.removebtn');
@@ -61,3 +64,4 @@ formSubmision.addEventListener('submit', (e) => {
   titleInput.value = '';
   authorInput.value = '';
 });
+
