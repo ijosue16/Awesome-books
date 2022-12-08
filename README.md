@@ -113,19 +113,13 @@
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[List_Page]**
+- **[AddBook_Page]**
+- **[Contact_Page]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,16 +149,19 @@ Clone this repository to your desired folder:
 
 ### run the following command if you are using the terminal or cmd
 
-<code>git clone git@github.com:ijosue16/Mobile-portofolio.git</code>
+<code>git clone https://github.com/ijosue16/Awesome-books.git</code>
 
 **and add**
 
 Prerequisites
 In order to run this project you need:
+- code editor
 
 ### Install
 
 Install this project with:
+- npm install
+- liveserver extension
 
 
 
