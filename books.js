@@ -3,6 +3,12 @@ const dataContainer = document.querySelector('.dataContainer');
 const formSubmision = document.querySelector('.formSubmission');
 const titleInput = document.querySelector('.title');
 const authorInput = document.querySelector('.author');
+const List = document.querySelector('.List');
+const addNew = document.querySelector('.Add-New');
+const Contact = document.querySelector('.Contact');
+const contactSection = document.querySelector('.contact');
+const dataContainerTitle = document.querySelector('.dataContainerTitle');
+
 class BookShelv {
   books = JSON.parse(localStorage.getItem('books')) || [];
 
@@ -38,6 +44,31 @@ class BookShelv {
     localStorage.setItem('books', JSON.stringify(this.books));
     location.reload();
   }
+
+  static ListRemove() {
+    dataContainer.style.display = 'flex';
+    contactSection.style.display = 'none';
+    formSubmision.style.display = 'none';
+    dataContainerTitle.style.display = 'flex';
+
+    if (dataContainer.childElementCount === 0) {
+      dataContainer.style.display = 'none';
+    }
+  }
+
+  static addNewRemove() {
+    dataContainer.style.display = 'none';
+    formSubmision.style.display = 'flex';
+    dataContainerTitle.style.display = 'none';
+    contactSection.style.display = 'none';
+  }
+
+  static ContactRemove() {
+    formSubmision.style.display = 'none';
+    dataContainer.style.display = 'none';
+    contactSection.style.display = 'flex';
+    dataContainerTitle.style.display = 'none';
+  }
 }
 
 const bookshelv = new BookShelv();
@@ -52,6 +83,8 @@ removeBtns.forEach((btn, index) => {
 if (dataContainer.childElementCount === 0) {
   dataContainer.classList.add('hidden');
 }
+contactSection.style.display = 'none';
+formSubmision.style.display = 'none';
 
 formSubmision.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -60,4 +93,18 @@ formSubmision.addEventListener('submit', (e) => {
 
   titleInput.value = '';
   authorInput.value = '';
+});
+List.addEventListener('click', (l) => {
+  l.preventDefault();
+  BookShelv.ListRemove();
+});
+
+addNew.addEventListener('click', (l) => {
+  l.preventDefault();
+  BookShelv.addNewRemove();
+});
+
+Contact.addEventListener('click', (l) => {
+  l.preventDefault();
+  BookShelv.ContactRemove();
 });
